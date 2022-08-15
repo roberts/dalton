@@ -12,7 +12,8 @@
         "laravel/nova": "^3.22",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "tipoff/authorization": "^2.10"
+        "tipoff/authorization": "^2.10",
+        "tipoff/products": "^2.2"
     },
     "require-dev": {
         "facade/ignition": "^2.5",

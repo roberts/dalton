@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use Tipoff\Products\Models\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $products = Product::query()->byLocation(1)->get();
+    return view('index',['products'=>$products]);
 });
